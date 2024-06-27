@@ -1,0 +1,49 @@
+.pop-up {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.182);
+    backdrop-filter: blur(40px);
+    position: fixed;
+    top: 0;
+    padding: 20px;
+
+}
+
+.pop-up-content {
+    position: relative;
+}
+
+.pop-up button {
+    padding: 5px;
+}
+
+.close {
+    position: absolute;
+    right: -25px;
+    top: -40px;
+    border: none;
+    padding: 0;
+}
+
+.close:hover {
+    background-color: transparent;
+}
+
+
+.close svg {
+    fill: rgb(255, 66, 66);
+}
+
+.confirm {
+    border-color: rgb(118, 247, 118);
+}
+
+.deny {
+    border-color: rgb(255, 66, 66);
+}
+
+.deny-text {
+    font-size: 20px;
+    margin: 0;
+    padding: 5px 0;
+}

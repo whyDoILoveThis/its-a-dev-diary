@@ -1,0 +1,315 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
+}
+
+html {
+    background-color: rgb(38, 40, 48);
+
+}
+
+body {
+    margin: 0;
+}
+
+.app {
+    background-color: rgb(38, 40, 48);
+    height: 100%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-weight: 300;
+}
+
+h3 {
+    font-weight: 300;
+}
+
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.app a {
+    color: white;
+    cursor: pointer;
+}
+
+button 
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: 0;
+    border: 1.5px solid rgb(150, 21, 255);
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.1s ease, border-color 0.1s ease;
+
+ }
+
+ button svg {
+    transition: fill 0.1s ease, stroke 0.1s ease;
+
+ }
+
+ button:hover, .btn-selected {
+    background-color: rgba(106, 28, 151, 0.637);
+    border-color: white;
+    text-shadow: 1px 1px black;
+ }
+
+a {
+    text-decoration: none;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+}
+
+.nav .nav-user:hover {
+    text-decoration: none;
+}
+
+.profile-pic {
+    width: 45px;
+    height: 45px;
+    object-fit: contain;
+    border-radius: 50%;
+}
+
+.profile-pic-lg {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+}
+
+
+.profile-card-bg .profile-pic {
+    cursor: zoom-in;
+}
+.profile-card-bg .profile-pic-lg {
+    cursor: zoom-out;
+}
+
+/*create page*/
+
+.my-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    font-size: 20px;
+}
+
+.create-input {
+    padding: 20px;
+    color: white;
+    width: 70%;
+    max-width: 800px;
+    background-color: rgba(0, 0, 0, 0.266);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+.settings-input {
+    padding: 20px;
+    color: white;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.266);
+    border: 1px solid #a72dff;
+    border-radius: 10px;
+}
+
+
+
+.create-textarea {
+    color: white;
+    padding: 20px;
+    height: 300px;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.266);
+    border: 1px solid white;
+    border-radius: 10px;
+}
+
+input[type="file"] {
+    background-color: transparent;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+    background-color: transparent;
+    border: 0;
+    border: 2px solid rgb(150, 21, 255);
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+    background-color: rgba(106, 28, 151, 0.637);
+    border-color: white;
+    text-shadow: 1px 1px black;
+}
+
+.absolute-profile {
+    position: absolute;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.settings {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.blog-card {
+    border: 1px solid white;
+    border-radius: 20px;
+    margin: 20px;
+    width: 300px;
+    height: fit-content;
+    overflow: hidden;
+    background-color: rgb(8, 8, 8);
+}
+
+.blog-card:hover {
+   box-shadow: 0px 3px 20px rgba(255, 37, 255, 0.425);
+}
+
+.blog-card a:hover {
+    text-decoration: none;
+}
+
+.blog-card-img {
+    width: 100%;
+    height: 170px;
+}
+
+.blog-card-title {
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+}
+
+.profile-user-card {
+    margin: 40px;
+    margin-bottom: 100px;
+    cursor: pointer;
+}
+
+.spacer {
+    height: 100px;
+}
+
+.footer {
+    height: 100px;
+}
+
+
+
+
+
+
+
+/* Custom styles for React Quill editor */
+.qill {
+    width: 100%;
+    max-width: 780px;
+}
+
+.ql-editor {
+    /* Set font family and size */
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    /* Set line height */
+    line-height: 1.6;
+  }
+
+  .ql-editor.ql-blank::before  {
+    color: rgba(255, 255, 255, 0.468);
+  }
+
+  .ql-toolbar {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #00000044;
+    width: 70vw;
+    max-width: 800px;
+  }
+  
+  .ql-container {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-height: 200px;
+    width: 70vw;
+    max-width: 800px;
+
+  }
+
+  @media screen and (max-width: 550px) {
+    .ql-toolbar, .ql-container {
+        width: 85vw;
+    }
+  }
+
+  /* Customize toolbar buttons */
+  .ql-toolbar button {
+    /* Set button background color */
+    background-color: #f0f0f0;
+    /* Set button text color */
+    color: #d4d4d4;
+    /* Add padding */
+    padding: 8px 12px;
+    /* Add margin */
+    margin: 0 2px;
+    /* Set border radius */
+    border-radius: 4px;
+    /* Add border */
+    border: none;
+    /* Add cursor pointer on hover */
+    cursor: pointer;
+  }
+  
+  /* Customize toolbar buttons on hover */
+  .ql-toolbar button:hover svg .ql-stroke{
+    /* Change background color on hover */
+    background-color: #ddd;
+    stroke: red;
+  }
+
+  .ql-toolbar .ql-stroke {
+    stroke: #ffffff;
+  }
+
+  .ql-picker-label:before {
+    color: white;
+  }
+  
+ 
+  
+  
+  
+  

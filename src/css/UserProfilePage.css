@@ -1,0 +1,31 @@
+.profile-card {
+    width: fit-content;
+    border: 1px solid #ffffff9f;
+    border-radius: 20px;
+    background-color: rgba(0, 0, 0, 0.296);
+    backdrop-filter: blur(30px);
+    padding: 0 10px;
+    margin: 10px;
+    transition: padding 0.3s ease;
+}
+
+.profile-card-bg {
+    background-color: rgba(0, 0, 0, 0.296);
+    backdrop-filter: blur(30px);
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.profile-card h2 {
+    transition: margin 0.3s ease;
+    margin: 10px;
+}
+
+.profile-card:hover h2 {
+    margin: 10px 12px;
+}
+
+.profile-card:hover {
+    background-color: rgba(212, 70, 255, 0.178);
+    padding: 0 20px;
+}

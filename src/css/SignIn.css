@@ -1,0 +1,7 @@
+.link-hover-purple a {
+    text-decoration: underline;
+ }
+
+ .link-hover-purple a:hover {
+    color: rgb(150, 21, 255);
+ }

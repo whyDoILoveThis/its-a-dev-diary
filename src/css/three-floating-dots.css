@@ -1,0 +1,46 @@
+/* Centering the loader */
+.loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Creating the Bouncing Dots loader */
+.dot-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dot {
+    width: 20px;
+    height: 20px;
+    background-color: #a03ce7; /* Red color, you can change this */
+    border-radius: 50%;
+    animation: bounce 1s infinite alternate;
+    margin: 0 10px;
+}
+
+/* Keyframe animation for bouncing */
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-20px);
+    }
+}
+
+/* Adding animation delay to create a staggered effect */
+.dot:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.dot:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.dot:nth-child(3) {
+    animation-delay: 0.6s;
+}
